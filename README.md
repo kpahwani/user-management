@@ -1,2 +1,2 @@
 # user-management
-User management service
+User management service.
