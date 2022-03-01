@@ -1,5 +1,9 @@
 from main import app
+from service.shared.resources import registry
 
-@app.route("/", methods=['GET'])
+
+@registry.handles(
+    rule="/"
+)
 def ping():
     return 'Ping pong'
