@@ -21,7 +21,7 @@ class UserCreateSchema(Schema):
     pincode = fields.Integer(required=True)
     
     
-class UserSchema(Schema):
+class UserSchema(Schema, ):
     _id = fields.Dict(required=True)
     first_name = fields.String(required=True)
     last_name = fields.String(required=True)
